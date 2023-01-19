@@ -2,16 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .contenitore{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Righteous', cursive;
+    color: white;
+    
 }
 
 body{
@@ -23,4 +32,37 @@ body{
     color: #e53170;
     text-align: center;
     margin: 50px;
+}
+
+.box{
+    float: left;
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+    background-color: black;
+    
+
+}
+
+.box-immagine{
+    float: left;
+    width: 30%;
+    padding-right: 5px;
+
+}
+
+.box-contenitore{
+    float: left;
+    width: 70%;
+    text-align: left;
+    
+}
+
+.immagine{
+    display: block;
+    width: 100%;
+}
+
+.mail{
+    color: aqua;
+    
 }
